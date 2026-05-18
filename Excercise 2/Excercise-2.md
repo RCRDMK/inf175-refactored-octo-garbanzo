@@ -31,8 +31,6 @@ As all buttons need to be connected to ground but the Arduino Uno not having eno
 
 ## Build an alarm clock
 
-After everything was properly wired and the RTC module was once properly initialized with rtc.adjust(), the provided code ran without a problem and it was possible to set an alarm and hear it too. This can be seen in video 1.
+After everything was properly wired and the RTC module was once properly initialized with rtc.adjust(), the provided code ran without a problem and it was possible to set an alarm and hear it too. This can be seen in the demo video.
 
-<img src="alarm-clock.mov" width="300" />
-
-**Demo video of working alarm clock**
+[Demo video of working alarm clock](alarm-clock.mp4)
