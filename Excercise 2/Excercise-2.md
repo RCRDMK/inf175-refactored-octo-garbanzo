@@ -33,4 +33,32 @@ As all buttons need to be connected to ground but the Arduino Uno not having eno
 
 After everything was properly wired and the RTC module was once properly initialized with rtc.adjust(), the provided code ran without a problem and it was possible to set an alarm and hear it too. This can be seen in the demo video.
 
-[Demo video of working alarm clock](https://youtu.be/Epw30OeKFN8) <-- Link redirects directly to YouTube
+[Demo video of working alarm clock](https://youtu.be/Epw30OeKFN8) **<-- Link redirects directly to YouTube**
+
+To further enhance the alarm clock three extra functions were added and will be named increased difficulty to implement.
+
+## Alarm keeps ringing until turned off
+
+In the provided file the alarm would automatically turn off after a prior specified number of rings has been reached. However, this cannot ensure that the user also woke up, is awake, and won't slumber off again. To fix this, the for-loop in the alarmRing() function has been changed to a while-loop which will be looped through until the user will press the green button.
+
+## Countdown to the next alarm
+
+Once the alarm has been activated, users would have to switch inside the alarm menu again to see when the alarm is ringing. With this function that won't be necessary anymore as the remaining time until the alarm rings will be shown right beneath the current time. For this the time of the alarm will be subtracted from the current time and then be displayed.
+
+## Snooze function
+
+To give users this "five more minutes" feeling, a snooze function has been implemented. It turns the current alarm off and turns a new alarm on for five minutes in the future. Here switch-cases have been used to ensure proper minute overflow from such minutes as 56 into 01 and not 61.
+
+## Other functions
+
+These three functions, though simple, ensure not only that the user of the alarm clock won't be overwhelmed and/or confused when interacting with the alarm clock but also proper maintainance of the code. Other functions, which have been thought about but not realized due to time constraints and feasibility, have been for instance the capability to set multiple alarms with multiple different alarm tones, possibly even audio files from the internet.
+
+## Alarm Clock code and changes
+
+The Arduino code for the alarm clock can be found [here](DDF_AlarmClock_Revised.ino) and the lines of code for the above mentioned changes are the following:
+
+**Alarm keeps ringing**: LoC 92 - 95 and 229 - 240
+
+**Countdown until next alarm**: LoC 132 - 152
+
+**Snooze function**: LoC 98 - 127
