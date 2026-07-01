@@ -26,4 +26,10 @@ Although, this will be not seen by me anymore, as the actual milling will be don
 
 **Image 4 and 5**
 
-To give the design more depth, the pockets were designed to be 1cm and the candle hole to be 2cm with the wood's thickness being 3cm. Image 5 shows the final product that was milled.
+To give the design more depth, the pockets were designed to be 1cm and the candle hole to be 2cm with the wood's thickness being 3cm. Image 6 and 7 show the final product that was milled.
+
+<img src="IMG_6.jpg" width="300" />
+
+<img src="IMG_7.jpg" width="300" />
+
+**Image 6 and 7**
